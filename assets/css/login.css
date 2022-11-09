@@ -29,3 +29,18 @@ html ,body {
 .layui-form {
     padding: 0 50px;
 }
+.layui-form-item {
+    position: relative;
+}
+.layui-form-item i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.layui-input {
+    padding-left: 40px;
+}
+.layui-input:hover {
+    border: 1px solid rgb(16, 185, 185) !important;
+}
+
