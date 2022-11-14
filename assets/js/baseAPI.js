@@ -15,11 +15,11 @@ $.ajaxPrefilter(function (options) {
     // 全局统一挂载complete函数
     options.complete = function(res) {
         let a = res.responseJSON.status
-            // let b = res.responseJSON.message
-            // console.log(a)
-            // console.log(b)
+            let b = res.responseJSON.message
+            console.log(a)
+            console.log(b)
 
-            if(a === 1) {
+            if(a === 1 && b=="身份认证失败！") {
                 // 强制清空
                 localStorage.removeItem('token')
                 // 强制跳转
